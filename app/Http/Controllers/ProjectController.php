@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Project;
 
 class ProjectController extends Controller
 {
     public function index(){
-        $project = \App\Project::all();
-        return view('projects.index');
+        $project = Project::all();
+        return view('projects.index', compact('project'));
     }
 }
