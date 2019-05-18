@@ -10,7 +10,7 @@
     <ul>
 
         @foreach ($project as $project)
-        <li>{{$project->title}}</li>
+        <li>{{$project->title}} : {{$project->description}}</li>
         @endforeach
 
     </ul>
